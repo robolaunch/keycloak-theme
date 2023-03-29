@@ -835,9 +835,11 @@ label{
 }
 
 .alert{
+  margin-bottom: 1.25rem !important;
+  width: 20rem !important;
   border-radius: 0.25rem;
   --tw-bg-opacity: 1 !important;
-  background-color: rgb(235 235 235 / var(--tw-bg-opacity)) !important;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity)) !important;
   padding: 0.5rem !important;
   font-size: 0.75rem !important;
   line-height: 1rem !important;

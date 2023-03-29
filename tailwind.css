@@ -85,7 +85,7 @@ label {
 }
 
 .alert {
-  @apply !text-xs !bg-layer-light-100 !p-2 rounded;
+  @apply !text-xs !bg-layer-light-50 !p-2 rounded !w-80 !mb-5;
 }
 
 .my-color {
