@@ -714,6 +714,10 @@ input[type="text"]:focus{
   --tw-ring-color: rgb(172 45 254 / var(--tw-ring-opacity));
 }
 
+body *{
+  margin: 0px !important;
+}
+
 label{
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -732,8 +736,10 @@ label{
 .kcFormOptionsWrapperClass{
   display: flex;
   justify-content: flex-end;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
   --tw-text-opacity: 1;
   color: rgb(172 45 254 / var(--tw-text-opacity));
 }
@@ -757,8 +763,15 @@ label{
   line-height: 1rem;
 }
 
-#kc-form-wrapper form{
+#kc-form-wrapper{
+  border-right-width: 0px !important;
+  padding-right: 0px !important;
+}
+
+#kc-form-wrapper form,
+#kc-content-wrapper form{
   display: flex;
+  width: 20rem !important;
   flex-direction: column;
   gap: 0.75rem;
 }
@@ -779,4 +792,57 @@ label{
   justify-content: center;
   padding-top: 0.25rem;
   padding-bottom: 2rem;
+}
+
+#kc-social-providers{
+  padding-left: 0px !important;
+  padding-top: 1.5rem;
+}
+
+.login-pf-social-all{
+  display: flex;
+  width: 100%;
+  gap: 0.5rem;
+}
+
+#kc-social-providers li{
+  width: 100%;
+}
+
+.zocial.github,
+.zocial.google{
+  border-radius: 0.25rem;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(214 214 214 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity)) !important;
+  --tw-text-opacity: 1;
+  color: rgb(41 41 41 / var(--tw-text-opacity));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
+}
+
+#kc-info{
+  padding-bottom: 0px !important;
+}
+
+#header-logo{
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 8rem !important;
+}
+
+.alert{
+  border-radius: 0.25rem;
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(235 235 235 / var(--tw-bg-opacity)) !important;
+  padding: 0.5rem !important;
+  font-size: 0.75rem !important;
+  line-height: 1rem !important;
+}
+
+.my-color{
+  visibility: hidden !important;
 }

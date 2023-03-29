@@ -12,6 +12,10 @@ input[type="text"] {
   @apply w-full p-3 h-10 outline-none transition-all duration-500 border border-layer-light-300 rounded-md focus:ring-2 focus:ring-primary;
 }
 
+body * {
+  @apply !m-0;
+}
+
 label {
   @apply text-layer-light-700 text-sm;
 }
@@ -24,7 +28,7 @@ label {
 }
 
 .kcFormOptionsWrapperClass {
-  @apply flex justify-end text-primary text-sm;
+  @apply flex justify-end text-primary text-xs py-3;
 }
 
 #kc-registration {
@@ -35,8 +39,13 @@ label {
   @apply flex gap-1 justify-start items-center text-xs;
 }
 
-#kc-form-wrapper form {
-  @apply flex flex-col gap-3;
+#kc-form-wrapper {
+  @apply !pr-0 !border-r-0;
+}
+
+#kc-form-wrapper form,
+#kc-content-wrapper form {
+  @apply flex flex-col gap-3 !w-80;
 }
 
 .card-pf {
@@ -49,4 +58,36 @@ label {
 
 #kc-page-title {
   @apply flex items-center justify-center pt-1 pb-8;
+}
+
+#kc-social-providers {
+  @apply !pl-0 pt-6;
+}
+.login-pf-social-all {
+  @apply w-full flex gap-2;
+}
+
+#kc-social-providers li {
+  @apply w-full;
+}
+
+.zocial.github,
+.zocial.google {
+  @apply !bg-layer-light-50 text-layer-dark-700 border border-layer-light-200 rounded transition-all duration-500;
+}
+
+#kc-info {
+  @apply !pb-0;
+}
+
+#header-logo {
+  @apply !w-32 !mx-auto;
+}
+
+.alert {
+  @apply !text-xs !bg-layer-light-100 !p-2 rounded;
+}
+
+.my-color {
+  @apply !invisible;
 }

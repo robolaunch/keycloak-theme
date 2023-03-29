@@ -2,7 +2,11 @@
 module.exports = {
   mode: "jit",
   darkMode: "class",
-  content: ["./src/*.{html,js,ts,jsx,tsx,ftl}"],
+  content: [
+    "./src/*.{html,js,ts,jsx,tsx,ftl}",
+    "./public/*.{html,js,ts,jsx,tsx,ftl}",
+  ],
+
   theme: {
     extend: {
       fontFamily: {

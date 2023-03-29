@@ -10,6 +10,7 @@ import ParticleImage, {
 } from "react-particle-image";
 import "./style.css";
 import "animate.css";
+import rocket from "./robolaunch-rocket.png";
 
 const KcLoginThemeApp = lazy(() => import("./keycloak-theme/login/KcApp"));
 const KcAccountThemeApp = lazy(() => import("./keycloak-theme/account/KcApp"));
@@ -59,7 +60,7 @@ createRoot(document.getElementById("root")!).render(
         >
           <ParticleImage
             className="h-64 animate__animated animate__fadeInDown"
-            src="/images/rocket.png"
+            src={rocket}
             scale={0.75}
             entropy={20}
             maxParticles={2000}
