@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input[type="submit"] {
+  @apply w-full h-12 bg-primary hover:bg-layer-primary-700 active:bg-purple-900 focus:ring-4 focus:ring-layer-primary-300 disabled:bg-layer-primary-400 text-sm font-medium text-white rounded-md transition-all;
+}
+
+input[type="password"],
+input[type="text"] {
+  @apply w-full p-3 h-10 outline-none transition-all duration-500 border border-layer-light-300 rounded-md focus:ring-2 focus:ring-primary;
+}
+
+label {
+  @apply text-layer-light-700 text-sm;
+}
+
+.my-root-class body,
+.login-pf body {
+  background: none !important;
+  background-image: none !important;
+  @apply bg-layer-light-bg;
+}
+
+.kcFormOptionsWrapperClass {
+  @apply flex justify-end text-primary text-sm;
+}
+
+#kc-registration {
+  @apply flex flex-col items-center justify-center w-full h-full pt-6;
+}
+
+#kc-form-options div label {
+  @apply flex gap-1 justify-start items-center text-xs;
+}
+
+#kc-form-wrapper form {
+  @apply flex flex-col gap-3;
+}
+
+.card-pf {
+  @apply !bg-transparent;
+}
+
+#kc-registration span a span {
+  @apply pl-1 text-primary;
+}
+
+#kc-page-title {
+  @apply flex items-center justify-center pt-1 pb-8;
+}
