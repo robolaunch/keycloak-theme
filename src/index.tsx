@@ -38,8 +38,8 @@ const motionForce = (x: number, y: number): ParticleForce => {
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <Suspense>
-      <div className="w-full h-screen grid grid-cols-2">
-        <div className="col-span-1 flex items-center justify-center bg-layer-light-bg animate__animated animate__fadeInLeft">
+      <div className="w-full h-screen grid grid-cols-1 lg:grid-cols-2">
+        <div className="col-span-1 flex items-center justify-center bg-layer-light-50 animate__animated animate__fadeInLeft">
           {(() => {
             if (kcLoginThemeContext !== undefined) {
               return <KcLoginThemeApp kcContext={kcLoginThemeContext} />;
@@ -70,7 +70,7 @@ createRoot(document.getElementById("root")!).render(
             backgroundColor="transparent"
             alt="Robolaunch"
           />
-          <h1 className="text-2xl font-semibold animate__animated animate__fadeInUp">
+          <h1 className="text-2xl text-center font-semibold animate__animated animate__fadeInUp">
             Develop, Deploy and Manage at Scale!
           </h1>
           <p className="text-sm text-center font-light px-20 animate__animated animate__fadeInUp">

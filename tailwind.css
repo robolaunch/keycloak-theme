@@ -4,12 +4,12 @@
 @tailwind utilities;
 
 input[type="submit"] {
-  @apply w-full h-12 bg-primary hover:bg-layer-primary-700 active:bg-purple-900 focus:ring-4 focus:ring-layer-primary-300 disabled:bg-layer-primary-400 text-sm font-medium text-white rounded-md transition-all;
+  @apply w-full h-11 bg-primary hover:bg-layer-primary-700 hover:cursor-pointer active:bg-purple-900 focus:ring-4 focus:ring-layer-primary-300 disabled:bg-layer-primary-400 text-sm font-normal text-white rounded-md transition-all;
 }
 
 input[type="password"],
 input[type="text"] {
-  @apply w-full p-3 h-10 outline-none transition-all duration-500 border border-layer-light-300 rounded-md focus:ring-2 focus:ring-primary;
+  @apply w-full p-3 h-10 outline-none transition-all duration-500 border border-layer-light-300 rounded-md focus:ring-2 focus:ring-primary !text-sm;
 }
 
 body * {
@@ -24,7 +24,7 @@ label {
 .login-pf body {
   background: none !important;
   background-image: none !important;
-  @apply bg-layer-light-bg;
+  @apply bg-layer-light-50;
 }
 
 .kcFormOptionsWrapperClass {
@@ -85,9 +85,25 @@ label {
 }
 
 .alert {
-  @apply !text-xs !bg-layer-light-50 !p-2 rounded !w-80 !mb-5;
+  @apply !text-xs !bg-layer-light-50 !p-2 rounded !w-80 !mb-5 !border !border-layer-light-200;
 }
 
 .my-color {
   @apply !invisible;
+}
+
+.instruction {
+  @apply !text-sm !text-center;
+}
+
+.instruction-container {
+  @apply !flex !flex-col !gap-4;
+}
+
+.instruction-resend {
+  @apply !text-secondary;
+}
+
+.instruction-back-login {
+  @apply !text-primary !text-center !text-sm;
 }

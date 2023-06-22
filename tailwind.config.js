@@ -18,7 +18,6 @@ module.exports = {
 
         layer: {
           light: {
-            bg: "#f4f8fa",
             50: "#ffffff",
             100: "#ebebeb",
             200: "#d6d6d6",

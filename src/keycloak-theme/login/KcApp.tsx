@@ -16,6 +16,7 @@ const Login = lazy(() => import("./pages/Login"));
 const Register = lazy(() => import("./pages/Register"));
 const RegisterUserProfile = lazy(() => import("./pages/RegisterUserProfile"));
 const LoginResetPassword = lazy(() => import("./pages/LoginResetPassword"));
+const LoginVerifyEmail = lazy(() => import("./pages/LoginVerifyEmail"));
 const Terms = lazy(() => import("./pages/Terms"));
 const MyExtraPage1 = lazy(() => import("./pages/MyExtraPage1"));
 const MyExtraPage2 = lazy(() => import("./pages/MyExtraPage2"));
@@ -80,6 +81,13 @@ export default function App(props: { kcContext: KcContext }) {
           case "terms.ftl":
             return (
               <Terms
+                {...{ kcContext, i18n, Template, classes }}
+                doUseDefaultCss={true}
+              />
+            );
+          case "login-verify-email.ftl":
+            return (
+              <LoginVerifyEmail
                 {...{ kcContext, i18n, Template, classes }}
                 doUseDefaultCss={true}
               />
