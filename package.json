@@ -1,11 +1,11 @@
 {
   "name": "robolaunch",
-  "homepage": "https://starter.keycloakify.dev",
-  "version": "4.0.1",
-  "description": "A starter/demo project for keycloakify",
+  "homepage": "https://robolaunch.cloud",
+  "version": "1.0.1",
+  "description": "keycloak theme for robolaunch.cloud",
   "repository": {
     "type": "git",
-    "url": "git://github.com/codegouvfr/keycloakify-starter.git"
+    "url": "git://github.com/robolaunch/keycloak-theme"
   },
   "scripts": {
     "start": "react-scripts start",
