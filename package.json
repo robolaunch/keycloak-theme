@@ -1,8 +1,9 @@
 {
   "name": "robolaunch",
   "homepage": "https://robolaunch.cloud",
-  "version": "1.0.1",
-  "description": "keycloak theme for robolaunch.cloud",
+  "version": "1.0.2",
+  "description": "Keycloak theme for robolaunch.cloud",
+  "author": "gokhangunduz",
   "repository": {
     "type": "git",
     "url": "git://github.com/robolaunch/keycloak-theme"
@@ -26,7 +27,6 @@
       "my-extra-page-2.ftl"
     ]
   },
-  "author": "gokhangunduz",
   "license": "MIT",
   "keywords": [],
   "dependencies": {

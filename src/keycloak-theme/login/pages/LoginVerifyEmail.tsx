@@ -34,10 +34,7 @@ export default function LoginVerifyEmail(
           {msg("emailVerifyInstruction3")}
         </p>
 
-        <a
-          className="instruction-back-login"
-          href="https://www.robolaunch.cloud"
-        >
+        <a className="instruction-back-login" href={url?.loginRestartFlowUrl}>
           Back to Login
         </a>
       </div>

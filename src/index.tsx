@@ -56,7 +56,7 @@ createRoot(document.getElementById("root")!).render(
           style={{
             background: "linear-gradient(rgb(71, 16, 106), rgb(21, 83, 114))",
           }}
-          className="col-span-1 flex flex-col gap-4 justify-center items-center text-white animate__animated animate__fadeInRight"
+          className="hidden md:flex flex-col col-span-1 gap-4 justify-center items-center text-white animate__animated animate__fadeInRight"
         >
           <ParticleImage
             className="h-64 animate__animated animate__fadeInDown"
